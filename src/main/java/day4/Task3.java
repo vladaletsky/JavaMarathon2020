@@ -1,5 +1,7 @@
 package day4;
 
+import com.sun.xml.fastinfoset.tools.XML_SAX_StAX_FI;
+
 import java.util.Arrays;
 import java.util.Random;
 
@@ -14,12 +16,17 @@ public class Task3 {
                 array[i][j] = random.nextInt(50);
             }
         }
+        int max = 0;
         int sum = 0;
         for (int i = 0; i < 12; i++) {
-            if (Arrays.stream(array[i]).sum() > sum) {
+            if (Arrays.stream(array[i]).sum() >= sum) {
                 sum = Arrays.stream(array[i]).sum();
-                System.out.println(i); // не разобрался как вывести именно последний индекс..
+                max = i;
             }
+
         }
+        System.out.println(max);
+
+
     }
 }
