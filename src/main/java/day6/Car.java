@@ -34,7 +34,7 @@ public class Car {
     }
 
     public int yearDifference(int year){
-        return 2020-year;
+        return year - this.year;
     }
 
 

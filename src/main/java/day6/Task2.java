@@ -6,7 +6,7 @@ public class Task2 {
         airplane.setYear(2007);
         airplane.setLength(70);
         airplane.fillUp(100);
-        airplane.fillUp(airplane.getFuel()+400); // проблема с двойным выводом
+        airplane.fillUp(400); // проблема с двойным выводом
         airplane.info();
     }
 }

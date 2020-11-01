@@ -23,11 +23,12 @@ public class Motorbike {
         return model;
     }
 
-    public void info(){
+    public void info() {
         System.out.println("Это мотоцикл");
     }
 
-    public int yearDifference(int year){
-        return 2020-getYear();
+    public int yearDifference(int year) {
+        return year - this.year;
+
     }
 }
