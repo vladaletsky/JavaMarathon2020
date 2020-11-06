@@ -7,7 +7,7 @@ public class Student extends Human {
         this.groupName = groupName;
     }
 
-    String groupName;
+    private String groupName;
 
     public String getGroupName() {
         return groupName;
@@ -18,8 +18,8 @@ public class Student extends Human {
     }
 
     public void printInfo(){
-        System.out.println("Этот человек с именем " + super.name);
-        System.out.println("Этот студент с именем " + this.name);
+        super.printInfo();
+        System.out.println("Этот студент с именем " +getName());
     }
 
 

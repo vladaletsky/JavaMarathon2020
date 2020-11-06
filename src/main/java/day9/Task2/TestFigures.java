@@ -1,7 +1,5 @@
 package day9.Task2;
 
-import java.util.Arrays;
-
 public class TestFigures {
 
     public static void main(String[] args) {
@@ -20,14 +18,20 @@ public class TestFigures {
     }
 
     public static double calculateRedPerimeter(Figure[] figures) {
-        if (Arrays.toString(figures).equals("Red")) {
-
-                                                                         // Вот тут завис...
+        double sum = 0;
+        for (Figure figure : figures) {
+            if (figure.getColor().equals("Red"))
+                sum += figure.perimeter();
         }
-        return 0;
+        return sum;
     }
 
     public static double calculateRedArea(Figure[] figures) {
-        return 0;
+        double sum = 0;
+        for (Figure figure : figures) {
+            if (figure.getColor().equals("Red"))
+                sum += figure.area();
+        }
+        return sum;
     }
 }

@@ -2,22 +2,21 @@ package day9.Task2;
 
 public class Rectangle extends Figure {
 
-    private int width;
-    private int heigth;
+    private double width, height;
 
-    public Rectangle(int width, int heigth, String color) {
+    public Rectangle(double width, double heigth, String color) {
         super(color);
         this.width = width;
-        this.heigth = heigth;
+        this.height = heigth;
     }
 
     @Override
     public double area() {
-        return width * heigth;
+        return width * height;
     }
 
     @Override
     public double perimeter() {
-        return (width * 2) + (heigth * 2);
+        return (width * 2) + (height * 2);
     }
 }

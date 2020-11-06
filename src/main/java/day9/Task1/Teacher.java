@@ -7,7 +7,7 @@ public class Teacher extends Human {
         this.subjectName = subjectName;
     }
 
-    String subjectName;
+    private String subjectName;
 
     public String getSubjectName() {
         return subjectName;
@@ -18,7 +18,7 @@ public class Teacher extends Human {
     }
 
     public void printInfo(){
-        System.out.println("Этот человек с именем " + super.name);
-        System.out.println("Этот преподаватель с именем " + this.name);
+        super.printInfo();
+        System.out.println("Этот преподаватель с именем " + getName());
     }
 }
