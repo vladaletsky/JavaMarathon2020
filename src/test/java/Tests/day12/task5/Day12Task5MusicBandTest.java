@@ -1,5 +1,7 @@
 //package Tests.day12.task5;
 //
+//import day12.task5.MusicArtist;
+//import day12.task5.MusicBand;
 //import org.junit.jupiter.api.Test;
 //
 //import java.util.ArrayList;
